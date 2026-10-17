@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About &mdash; Rhafadarma Nakaula</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-about">
+
+  <header class="nav-outer">
+    <nav class="pill-nav" id="pillNav">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-initials">RN</span>
+        <span class="brand-name">Rhafadarma</span>
+      </a>
+      <div class="nav-center" id="navCenter">
+        <div class="nav-indicator" id="navIndicator"></div>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link is-active">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+      </div>
+      <a href="projects.html" class="nav-pill-cta">Lihat Proyek</a>
+    </nav>
+  </header>
+
+  <section class="page-hero-section">
+    <div class="page-hero-inner">
+      <p class="section-eyebrow">Tentang Saya</p>
+      <h1 class="page-hero-h1" id="aboutTitle">
+        Rhafadarma<br /><span class="h-gradient">Nakaula.</span>
+      </h1>
+    </div>
+  </section>
+
+  <section class="about-grid-section">
+    <div class="about-grid-wrap">
+
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <div class="about-photo-placeholder" style="display:flex;">RN</div>
+        </div>
+        <div class="about-detail-pills">
+          <div class="detail-pill"><span class="pill-label">Universitas</span><span class="pill-val">UNPAM</span></div>
+          <div class="detail-pill"><span class="pill-label">Prodi</span><span class="pill-val">Sistem Informasi</span></div>
+          <div class="detail-pill"><span class="pill-label">Angkatan</span><span class="pill-val">2024</span></div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="about-bio">
+          Saya adalah mahasiswa Sistem Informasi di Universitas Pamulang yang tertarik pada
+          pengembangan web, mobile development, desain antarmuka, analisis data, dan video editing.
+          Selalu ingin belajar hal baru dan mengeksplorasi teknologi untuk membangun solusi
+          yang berguna dan berdampak nyata.
+        </p>
+        <div class="about-tags">
+          <span class="about-tag">Problem Solver</span>
+          <span class="about-tag">Fast Learner</span>
+          <span class="about-tag">Team Player</span>
+          <span class="about-tag">Creative Thinker</span>
+        </div>
+        <a href="projects.html" class="btn-hero-primary" style="align-self:flex-start;margin-top:8px;">Lihat Proyek &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="skills-section-wrap">
+    <div class="skills-section-inner">
+      <p class="section-eyebrow">Kemampuan</p>
+      <h2 class="section-h2">Skills &amp; Tools</h2>
+      
+      <div id="skills-root"></div>
+    </div>
+  </section>
+
+  <section class="interests-section">
+    <div class="interests-wrap">
+      <p class="section-eyebrow">Personal</p>
+      <h2 class="section-h2">Hobi &amp; Minat</h2>
+      <div class="interest-grid">
+        <div class="interest-card glass-card">
+          <div class="interest-icon">&#9000;</div>
+          <h3>Coding</h3>
+          <p>Eksplorasi bahasa dan framework baru, ngulik proyek pribadi dari nol.</p>
+        </div>
+        <div class="interest-card glass-card">
+          <div class="interest-icon">&#9998;</div>
+          <h3>Desain UI</h3>
+          <p>Bikin prototipe, eksplorasi layout, dan interaksi pengguna di Figma.</p>
+        </div>
+        <div class="interest-card glass-card">
+          <div class="interest-icon">&#128241;</div>
+          <h3>Mobile Dev</h3>
+          <p>Membangun aplikasi mobile dengan Flutter dan Android Studio.</p>
+        </div>
+        <div class="interest-card glass-card">
+          <div class="interest-icon">&#9654;</div>
+          <h3>Video Editing</h3>
+          <p>Editing konten kreatif dan presentasi dengan CapCut &amp; DaVinci.</p>
+        </div>
+        <div class="interest-card glass-card">
+          <div class="interest-icon">&#127918;</div>
+          <h3>Gaming</h3>
+          <p>Cyberpunk 2077, Red Dead Redemption 2, Apex Legends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2024 Rhafadarma Nakaula &middot; Sistem Informasi UNPAM</span>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://github.com/RhaDar12" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const SKILLS = [
+      { name: "HTML",             cat: "coding",  level: 90 },
+      { name: "CSS",              cat: "coding",  level: 85 },
+      { name: "JavaScript",       cat: "coding",  level: 75 },
+      { name: "Python",           cat: "coding",  level: 70 },
+      { name: "Flutter",          cat: "mobile",  level: 75 },
+      { name: "Android Studio",   cat: "mobile",  level: 70 },
+      { name: "Figma",            cat: "design",  level: 80 },
+      { name: "Canva",            cat: "design",  level: 90 },
+      { name: "CapCut",           cat: "editing", level: 85 },
+      { name: "DaVinci Resolve",  cat: "editing", level: 70 },
+      { name: "MySQL",            cat: "tools",   level: 72 },
+      { name: "SPSS",             cat: "tools",   level: 75 },
+      { name: "Google Workspace", cat: "tools",   level: 85 },
+      { name: "Microsoft Office", cat: "tools",   level: 88 },
+    ];
+
+    const CAT_COLORS = {
+      coding:  { bg: "rgba(124,58,237,0.18)", border: "#7c3aed", bar: "#7c3aed", label: "#a78bfa" },
+      mobile:  { bg: "rgba(16,185,129,0.15)", border: "#10b981", bar: "#10b981", label: "#6ee7b7" },
+      design:  { bg: "rgba(236,72,153,0.15)", border: "#ec4899", bar: "#ec4899", label: "#f9a8d4" },
+      editing: { bg: "rgba(245,158,11,0.15)", border: "#f59e0b", bar: "#f59e0b", label: "#fcd34d" },
+      tools:   { bg: "rgba(107,114,128,0.18)", border: "#6b7280", bar: "#6b7280", label: "#9ca3af" },
+    };
+
+    const TABS = [
+      { key: "all",     label: "Semua" },
+      { key: "coding",  label: "Coding" },
+      { key: "mobile",  label: "Mobile Dev" },
+      { key: "design",  label: "Desain" },
+      { key: "editing", label: "Editing" },
+      { key: "tools",   label: "Tools" },
+    ];
+
+    function SkillBar({ skill, visible }) {
+      const fillRef = useRef(null);
+      const color = CAT_COLORS[skill.cat];
+
+      useEffect(() => {
+        if (!visible || !fillRef.current) return;
+        const el = fillRef.current;
+        el.style.width = "0%";
+        const delay = setTimeout(() => {
+          gsap.to(el, {
+            width: skill.level + "%",
+            duration: 0.9,
+            ease: "power2.out",
+          });
+        }, 80);
+        return () => clearTimeout(delay);
+      }, [visible]);
+
+      return (
+        <div className="rsk-bar-item" style={{ display: visible ? "flex" : "none", flexDirection: "column", gap: "8px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span style={{ fontWeight: 600, fontSize: "0.95rem", color: "#f1f5f9" }}>{skill.name}</span>
+              <span style={{
+                fontSize: "0.72rem", fontWeight: 600, padding: "2px 8px",
+                borderRadius: "999px", border: `1px solid ${color.border}`,
+                color: color.label, background: color.bg, letterSpacing: "0.03em"
+              }}>{skill.cat.toUpperCase()}</span>
+            </div>
+            <span style={{ fontSize: "0.82rem", color: "#94a3b8", fontVariantNumeric: "tabular-nums" }}>{skill.level}%</span>
+          </div>
+          <div style={{ background: "rgba(255,255,255,0.07)", borderRadius: "999px", height: "6px", overflow: "hidden" }}>
+            <div ref={fillRef} style={{
+              height: "100%", width: "0%", borderRadius: "999px",
+              background: `linear-gradient(90deg, ${color.bar}, ${color.label})`
+            }} />
+          </div>
+        </div>
+      );
+    }
+
+    function SkillsApp() {
+      const [active, setActive] = useState("all");
+      const prevTab = useRef("all");
+
+      function handleTab(key) {
+        if (key === active) return;
+        prevTab.current = active;
+        setActive(key);
+      }
+
+      return (
+        <div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "32px" }}>
+            {TABS.map(t => (
+              <button key={t.key} onClick={() => handleTab(t.key)}
+                style={{
+                  padding: "8px 18px", borderRadius: "999px", border: "none",
+                  cursor: "pointer", fontFamily: "inherit", fontSize: "0.88rem",
+                  fontWeight: active === t.key ? 700 : 500,
+                  background: active === t.key ? "#10b981" : "rgba(255,255,255,0.07)",
+                  color: active === t.key ? "#fff" : "#94a3b8",
+                  transition: "all 0.2s ease",
+                  outline: "none",
+                }}
+              >{t.label}</button>
+            ))}
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            {SKILLS.map(s => (
+              <SkillBar key={s.name} skill={s} visible={active === "all" || active === s.cat} />
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("skills-root")).render(<SkillsApp />);
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>
