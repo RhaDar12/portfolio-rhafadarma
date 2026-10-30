@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeProgress = Math.min(100, (elapsed / MIN_ANIM_DURATION) * 100);
     const assetProgress = Math.min(100, (loadedFrames / TOTAL_FRAMES) * 100);
 
-    const target = Math.min(timeProgress, assetProgress >= 70 ? timeProgress : assetProgress);
+    const target = Math.min(timeProgress, assetProgress);
 
     visualProgress += (target - visualProgress) * 0.16;
     if (Math.abs(target - visualProgress) < 0.3) {
@@ -147,12 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (loaderFill) loaderFill.style.width = '100%';
       runIntroDismiss();
     }
-  }, 3500);
+  }, 20000);
 
   if (cloudLoader) {
     cloudLoader.addEventListener('click', () => {
-      if (loaderFill) loaderFill.style.width = '100%';
-      runIntroDismiss();
+      if (loadedFrames >= TOTAL_FRAMES && !introDismissed) {
+        if (loaderFill) loaderFill.style.width = '100%';
+        runIntroDismiss();
+      }
     });
   }
 
